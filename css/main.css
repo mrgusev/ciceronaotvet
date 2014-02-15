@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #56585b; }
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: none;
+  text-shadow: none; }
+
+::selection {
+  background: none;
+  text-shadow: none; }
+
+textarea {
+  resize: none; }
+
+textarea:focus, input:focus {
+  outline: 0; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+/*
+ * Layout
+ */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 3%;
+  padding-right: 3%; }
+
+.header {
+  height: 7em;
+  width: 100%;
+  background-color: #292d32; }
+  .header .logo {
+    padding-top: 1em;
+    color: whitesmoke;
+    margin-bottom: 0.5em;
+    font-family: "Lobster", cursive;
+    font-size: 1.5em; }
+  .header ul.authors li {
+    display: inline-block;
+    margin-right: 3.9em;
+    font-size: 0.9em;
+    color: whitesmoke; }
+  .header ul.authors li:last-child {
+    margin-right: 0; }
+
+.content .container {
+  max-width: 700px; }
+.content .question {
+  height: 23em;
+  background-color: #f4f4f4;
+  padding-top: 5em; }
+  .content .question textarea {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+    width: 100%;
+    display: block;
+    height: 9em;
+    padding-top: 1.7em;
+    margin-bottom: 1.2em;
+    color: #757575; }
+.content .answer {
+  height: 21em;
+  padding-top: 5em;
+  text-align: center; }
+  .content .answer .quote {
+    margin-bottom: 2em;
+    font-size: 1.5em; }
+  .content .answer .author .pic {
+    background: url("../img/borhes.png") no-repeat;
+    background-size: 100%;
+    width: 4em;
+    height: 4em;
+    margin: 0 auto;
+    border-radius: 2em;
+    margin-bottom: 2em; }
+  .content .answer .author .title {
+    font-size: 1em; }
+    .content .answer .author .title .name {
+      font-weight: bold; }
+  .content .answer .container {
+    max-width: 700px; }
+
+.btn {
+  height: 3em;
+  line-height: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  background-color: #db5e5a;
+  display: block; }
+
+.btn.ask {
+  margin: 0 auto; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+@media (max-width: 400px) {
+  html {
+    font-size: 0.7em; } }

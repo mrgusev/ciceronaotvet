@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Цицерона ответ</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Lobster|Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">Нет - Цицерона ответ</div>
+            <ul class="authors">
+                <li>Гоголь</li>
+                <li>Гёте</li>
+                <li>Булгаков</li>
+                <li>Маркес</li>
+                <li>Борхес</li>
+                <li>Кафка</li>
+                <li>Коэльо</li>
+                <li>Мураками</li>
+                <li>Данте</li>
+                <li>Барто</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content" ng-controller="MainCtrl">
+        <div class="question">
+            <div class="container">
+                <textarea></textarea>
+                <button class="btn ask center">ПОЛУЧИТЬ ОТВЕТ</button>
+            </div>
+        </div>
+        <div class="answer">
+            <div class="container">
+                <div class="quote">О будущем мы ничего не знаем, кроме того,
+                    что оно будет отличаться от настоящего. Всякое предположение вполне может оказаться предрассудком</div>
+                <div class="author">
+                    <div class="pic"></div>
+                    <div class="title"><span class="name">Луис Борхес</span> / Книга Песка 1975 г. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/main.js"></script>
+</body>
+</html>
