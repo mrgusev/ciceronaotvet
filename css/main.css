@@ -34,7 +34,8 @@ textarea:focus, input:focus {
 
 ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 /*
  * Layout
@@ -145,6 +146,12 @@ ul {
 .clearfix {
   *zoom: 1; }
 
+@media (max-width: 1024px) {
+  .header .logo {
+    margin-bottom: 0.1em; } }
+@media (max-width: 570px) {
+  .header ul.authors {
+    display: none; } }
 @media (max-width: 400px) {
   html {
     font-size: 0.7em; } }
