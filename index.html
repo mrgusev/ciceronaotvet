@@ -37,11 +37,11 @@
         </div>
         <div class="answer {{state}}">
             <div class="container">
-                <div class="quote" textillate run="showQuote" text="quote" callback="showAuthor()"></div>
+                <div class="quote" textillate run="showQuote" text="quote.text" callback="showAuthor()"></div>
                 <hr/>
                 <div class="author">
                     <div class="pic"></div>
-                    <div class="title"><span class="name">Луис Борхес</span> / Книга Песка 1975 г. </div>
+                    <div class="title"><span class="name">{{quote.name}}</span> / {{quote.book}} </div>
                 </div>
             </div>
         </div>

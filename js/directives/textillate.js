@@ -13,7 +13,7 @@ angular.module('app')
                     if(scope.run){
                         $('#tlt').textillate({
                             in: { effect: 'flipInX',
-                                delayScale: 1,
+                                delayScale: 1.2,
                                 delay: 30
                             }
                         });
